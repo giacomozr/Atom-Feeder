@@ -1,5 +1,8 @@
 {
-    "name": "giacomo/atom-feeder",
+    "name": "giacomozr/atom-feeder",
+    "description": "Scrape a HTML page to find articles and turn them in an Atom Feed",
+    "type": "project",
+    "license": "MIT",
     "authors": [
         {
             "name": "Giacomo Zurru",
