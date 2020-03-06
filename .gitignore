@@ -1,2 +1,4 @@
-vendor
+.DS_Store
 .idea
+vendor
+feeds/feed.xml
