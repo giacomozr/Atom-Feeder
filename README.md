@@ -4,6 +4,9 @@
 
 Atom Feeder is a simple PHP script that will allow to scrape a HTML page to find articles who will be transformed in an Atom Feed.
 
+**Require:**
+* PHP 7.3
+
 ## Getting started
 
 Clone the project 

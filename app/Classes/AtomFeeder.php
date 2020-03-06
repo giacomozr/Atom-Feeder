@@ -12,6 +12,12 @@ class AtomFeeder {
     private $dom;
     private $rssFeed;
 
+    /**
+     * AtomFeeder constructor.
+     * @param $url string
+     * @param string $queryElements string
+     * @throws \Exception
+     */
     public function __construct($url, $queryElements = "article h1 a") {
         $this->setUrl($url);
         $this->setQueryElements($queryElements);
@@ -20,6 +26,10 @@ class AtomFeeder {
         $this->fetchArticles();
     }
 
+    /**
+     * @param $url string
+     * @throws \Exception string
+     */
     public function setUrl($url) {
         if (!isset($url)) {
             throw new \Exception('Missing url parameter');
@@ -29,6 +39,9 @@ class AtomFeeder {
         $this->parsedUrl = parse_url($this->url);
     }
 
+    /**
+     * @param $elements string
+     */
     public function setQueryElements($elements) {
         $this->queryElements = $elements;
     }
